@@ -69,11 +69,17 @@ input {
 }
 
 .tutorial-card img {
-  width: 100%;
-  max-width: 400px;  /* Limits size on large screens */
-  height: auto;
-  display: block;
-  margin: 10px auto;
-  border-radius: 6px;
+  width: 100%;       /* make image fill container width */
+  max-width: 400px;  /* limit max width on large screens */
+  height: auto;      /* keep aspect ratio */
+  display: block;    /* removes inline gap */
+  margin: 10px auto; /* centers image and adds vertical spacing */
+  border-radius: 6px; /* optional, for rounded corners */
+}
+
+@media screen and (max-width: 480px) {
+  .tutorial-card img {
+    max-width: 300px;  /* even smaller max width on very small screens */
+  }
 }
 
