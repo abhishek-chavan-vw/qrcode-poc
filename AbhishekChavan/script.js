@@ -6,7 +6,6 @@ const medicalData = document.getElementById("medicalData");
 
 // Simulate sending OTP
 sosBtn.addEventListener("click", () => {
-  // In production: Send OTP using Twilio/API to family member
   alert("OTP sent to registered emergency contact.");
   otpSection.style.display = "block";
 });
@@ -20,3 +19,4 @@ verifyOtpBtn.addEventListener("click", () => {
     alert("Invalid OTP. Please try again.");
   }
 });
+
