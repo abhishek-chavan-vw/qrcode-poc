@@ -83,3 +83,43 @@ input {
   }
 }
 
+.tutorial-header {
+  background-color: #005ea8;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.tutorial-card {
+  background-color: #f9f9ff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.tutorial-card img {
+  width: 100%;
+  max-width: 450px;
+  display: block;
+  margin: 15px auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.first-aid-link {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #005ea8;
+  text-decoration: none;
+}
+
+.first-aid-link:hover {
+  color: #003f7d;
+}
