@@ -162,7 +162,7 @@ input {
 /* New VWITS logo replacing old center logo */
 .vwits-logo {
   display: block;
-  max-width: 120px; /* smaller than old logo */
+  max-width: 90px; /* smaller than old logo */
   margin: 0 auto 20px;
   height: auto;
 }
