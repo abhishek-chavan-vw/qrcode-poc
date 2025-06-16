@@ -52,11 +52,6 @@ button {
   cursor: pointer;
 }
 
-#sosBtn {
-  background-color: #d93025; /* bright red */
-  color: white;
-  border: none;
-}
 
 input {
   display: block;
