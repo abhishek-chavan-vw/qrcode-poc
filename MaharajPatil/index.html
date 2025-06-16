@@ -8,13 +8,22 @@
 </head>
 <body>
   <div class="container">
-    <img src="VW_BlueLogo.jpg" alt="VW Logo" class="logo" />
+    
+<!-- New Header Section for logos and First Aid link -->
+    <header class="top-header">
+      <img src="../VW_BlueLogo.jpg" alt="VW Logo" class="top-left-logo" />
+      <a href="HelpPages/first-aid.html" class="top-right-link">First Aid Guide →</a>
+    </header>
+    
+    <img src="../VWITS_Logo.png" alt="VWITS Logo" class="vwits-logo" />
+    
     <h1>Emergency Information</h1>
+
     <div class="card">
-      <h2>Maharaj Patil</h2>
-      <p><strong>Blood Type:</strong> O+ve</p>
-      <p><strong>Allergies:</strong> NA </p>
-      <p><strong>Medical Conditions:</strong> NA </p>
+      <h2>Abhishek Chavan</h2>
+      <p><strong>Blood Type:</strong> AB+ve</p>
+      <p><strong>Allergies:</strong> Penicillin</p>
+      <p><strong>Medical Conditions:</strong> Asthma</p>
 
       <h3>Emergency Contacts</h3>
       <ul class="contact-list">
@@ -23,7 +32,25 @@
         <li><strong>Ambulance:</strong> <a href="tel:102">102</a></li>
       </ul>
     </div>
+
+    <button id="sosBtn">Send SOS</button>
+
+    <div id="otpSection" style="display: none;">
+      <p>Enter OTP:</p>
+      <input type="text" id="otpInput" />
+      <button id="verifyOtpBtn">Verify OTP</button>
+    </div>
+
+    <div id="medicalData" style="display: none;">
+      <h3>Medical History</h3>
+      <p>Past surgeries: Appendectomy</p>
+      <p>Medications: Inhaler (Salbutamol)</p>
+      <p>Doctor: Dr. Sharma, +1 555-222-3333</p>
+    </div>
+
+    
   </div>
+
 
   <script src="script.js"></script>
 </body>
