@@ -142,7 +142,7 @@ input {
 
 /* Original VW logo top-left */
 .top-left-logo {
-  max-width: 40px;  /* smaller than original */
+  max-width: 10px;  /* smaller than original */
   height: auto;
 }
 
