@@ -124,3 +124,10 @@ input {
 .first-aid-link:hover {
   color: #003f7d;
 }
+
+#sosBtn {
+  background-color: #d93025; 
+  color: white;
+  border: none;
+}
+
