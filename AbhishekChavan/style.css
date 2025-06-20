@@ -131,3 +131,38 @@ input {
   border: none;
 }
 
+/* New top header bar */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+/* Original VW logo top-left */
+.top-left-logo {
+  max-width: 35px;  /* smaller than original */
+  height: auto;
+}
+
+/* First Aid Guide link top-right */
+.top-right-link {
+  font-weight: bold;
+  color: #005ea8;
+  text-decoration: none;
+  font-size: 1rem;
+  align-self: center;
+}
+
+.top-right-link:hover {
+  color: #003f7d;
+}
+
+/* New VWITS logo replacing old center logo */
+.vwits-logo {
+  display: block;
+  max-width: 90px; /* smaller than old logo */
+  margin: 0 auto 20px;
+  height: auto;
+}
