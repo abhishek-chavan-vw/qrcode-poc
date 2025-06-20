@@ -5,32 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>First Aid Guide</title>
   <link rel="stylesheet" href="../style.css" />
+  <style>
+    /* Special styles just for this page */
+    .header-box {
+      background-color: #005ea8;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      font-size: 1.8rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .tutorial-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .tutorial-list li a {
+      display: block;
+      background-color: #f0f4f8;
+      color: #005ea8;
+      padding: 15px 20px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.2s;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .tutorial-list li a:hover {
+      background-color: #e1effc;
+      transform: translateY(-2px);
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 40px;
+      font-weight: bold;
+      display: block;
+      color: #005ea8;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .back-link:hover {
+      color: #003f7d;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1>First Aid Tutorials</h1>
+    <div class="header-box">First Aid Guide</div>
 
-    <div class="tutorial-card">
-      <h2>How to Treat a Cut</h2>
-      <img src="../../TreatFinger_1.jpg" alt="Step 1" />
-      <p>Step 1: Wash the wound with clean water.</p>
-      <img src="../../TreatFinger_2.jpg" alt="Step 2" />
-      <p>Step 2: Apply antiseptic solution.</p>
-      <img src="../../TreatFinger_3.jpg" alt="Step 3" />
-      <p>Step 3: Cover it with a clean bandage.</p>
+    <div class="card">
+      <h2 style="text-align:center; margin-bottom: 20px;">Select a Tutorial</h2>
+      <ul class="tutorial-list">
+        <li><a href="cut.html">How to Treat a Cut</a></li>
+        <li><a href="burn.html">How to Treat a Burn</a></li>
+        <li><a href="cpr.html">How to Perform CPR</a></li>
+        <li><a href="choking.html">How to Help Someone Choking</a></li>
+        <li><a href="fracture.html">How to Treat a Broken Bone</a></li>
+        <li><a href="seizure.html">How to Help During a Seizure</a></li>
+        <li><a href="bleeding.html">How to Stop Bleeding</a></li>
+      </ul>
     </div>
 
-    <div class="tutorial-card">
-      <h2>How to Perform CPR</h2>
-      <img src="../../CPR_1.jpg" alt="Check responsiveness" />
-      <p>Step 1: Check if the person is responsive.</p>
-      <img src="../../CPR_2.jpg" alt="Chest compressions" />
-      <p>Step 2: Begin chest compressions (30 times).</p>
-      <img src="../../CPR_3.jpg" alt="Rescue breaths" />
-      <p>Step 3: Give 2 rescue breaths, repeat until help arrives.</p>
-    </div>
-
-    <a href="../index.html" class="first-aid-link">← Back to Emergency Info</a>
+    <a href="../index.html" class="back-link">← Back to Emergency Info</a>
   </div>
 </body>
 </html>
