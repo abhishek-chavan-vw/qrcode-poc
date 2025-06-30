@@ -166,3 +166,44 @@ input {
   margin: 0 auto 20px;
   height: auto;
 }
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+/* Fetch Medical History Button */
+#fetchBtn {
+  background-color: #4da6ff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 123, 255, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+#fetchBtn:hover {
+  background-color: #1a8cff;
+}
+
+/* SOS Button */
+#sosBtn {
+  background-color: #d93025;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(217, 48, 37, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+#sosBtn:hover {
+  background-color: #b9241b;
+}
