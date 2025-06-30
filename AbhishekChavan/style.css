@@ -125,11 +125,6 @@ input {
   color: #003f7d;
 }
 
-#sosBtn {
-  background-color: #d93025; 
-  color: white;
-  border: none;
-}
 
 /* New top header bar */
 .top-header {
@@ -170,23 +165,29 @@ input {
 .button-row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 10px;
   margin: 20px 0;
 }
 
+.left-button, .right-button {
+  flex: 1;
+}
+
+/* Common button styling */
 #sosBtn, #fetchBtn {
-  flex: 1; /* both buttons take equal width */
-  max-width: 48%;
+  width: 100%;
   padding: 12px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: bold;
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* SOS Button (Left) */
+/* Left SOS button */
 #sosBtn {
   background-color: #d93025;
   color: white;
@@ -196,7 +197,7 @@ input {
   background-color: #b9241b;
 }
 
-/* Fetch Medical History Button (Right) */
+/* Right Fetch Medical History button */
 #fetchBtn {
   background-color: #4da6ff;
   color: white;
@@ -206,13 +207,18 @@ input {
   background-color: #1a8cff;
 }
 
+/* Responsive: stack buttons on small screens */
 @media screen and (max-width: 480px) {
   .button-row {
     flex-direction: column;
-    gap: 10px;
+  }
+
+  .left-button, .right-button {
+    width: 100%;
   }
 
   #sosBtn, #fetchBtn {
-    max-width: 100%;
+    width: 100%;
   }
 }
+
