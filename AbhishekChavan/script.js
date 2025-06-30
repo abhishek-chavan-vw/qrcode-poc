@@ -1,4 +1,4 @@
-const sosBtn = document.getElementById("sosBtn");
+const sosBtn = document.getElementById("fetchBtn");
 const otpSection = document.getElementById("otpSection");
 const otpInput = document.getElementById("otpInput");
 const verifyOtpBtn = document.getElementById("verifyOtpBtn");
