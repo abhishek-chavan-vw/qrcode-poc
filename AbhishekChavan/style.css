@@ -162,7 +162,7 @@ input {
   height: auto;
 }
 
-/* 🔲 Button Container */
+/* Button Container */
 .button-row {
   display: flex;
   justify-content: space-between;
@@ -171,7 +171,7 @@ input {
   max-width: 500px;
 }
 
-/* 🎨 Common Button Styles */
+/*  Common Button Styles */
 .button-row button {
   flex: 1;
   padding: 12px;
@@ -182,10 +182,10 @@ input {
   cursor: pointer;
   transition: background-color 0.3s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  white-space: nowrap; /* 🔒 Prevent text wrapping */
+  white-space: nowrap; /* Prevent text wrapping */
 }
 
-/* 🔴 SOS Button Style */
+/*  SOS Button Style */
 #sosBtn {
   background-color: #d93025;
   color: white;
@@ -195,9 +195,9 @@ input {
   background-color: #b9241b;
 }
 
-/* 🔷 Fetch Button Style */
+/*  Fetch Button Style */
 #fetchBtn {
-  background-color: #4da6ff;
+  background-color: #79c2ff;
   color: white;
 }
 
@@ -205,7 +205,7 @@ input {
   background-color: #1a8cff;
 }
 
-/* 📱 Responsive behavior - Keep side by side even on phones */
+
 @media screen and (max-width: 480px) {
   .button-row {
     flex-direction: row;
