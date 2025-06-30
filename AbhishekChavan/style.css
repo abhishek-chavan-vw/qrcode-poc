@@ -165,29 +165,24 @@ input {
 .button-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 10px;
-  margin: 20px 0;
+  margin: 20px auto;
+  max-width: 500px;
 }
 
-.left-button, .right-button {
+.button-row button {
   flex: 1;
-}
-
-/* Common button styling */
-#sosBtn, #fetchBtn {
-  width: 100%;
   padding: 12px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: bold;
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Left SOS button */
+/* SOS Button Style */
 #sosBtn {
   background-color: #d93025;
   color: white;
@@ -197,7 +192,7 @@ input {
   background-color: #b9241b;
 }
 
-/* Right Fetch Medical History button */
+/* Fetch Button Style */
 #fetchBtn {
   background-color: #4da6ff;
   color: white;
@@ -207,18 +202,13 @@ input {
   background-color: #1a8cff;
 }
 
-/* Responsive: stack buttons on small screens */
+/* Responsive: Stack on mobile */
 @media screen and (max-width: 480px) {
   .button-row {
     flex-direction: column;
   }
 
-  .left-button, .right-button {
-    width: 100%;
-  }
-
-  #sosBtn, #fetchBtn {
+  .button-row button {
     width: 100%;
   }
 }
-
