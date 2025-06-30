@@ -167,43 +167,52 @@ input {
   height: auto;
 }
 
-.button-group {
+.button-row {
   display: flex;
-  justify-content: flex-end;
-  gap: 10px;
+  justify-content: space-between;
   margin: 20px 0;
 }
 
-/* Fetch Medical History Button */
+#sosBtn, #fetchBtn {
+  flex: 1; /* both buttons take equal width */
+  max-width: 48%;
+  padding: 12px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* SOS Button (Left) */
+#sosBtn {
+  background-color: #d93025;
+  color: white;
+}
+
+#sosBtn:hover {
+  background-color: #b9241b;
+}
+
+/* Fetch Medical History Button (Right) */
 #fetchBtn {
   background-color: #4da6ff;
   color: white;
-  border: none;
-  padding: 10px 18px;
-  font-size: 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0, 123, 255, 0.3);
-  transition: background-color 0.3s ease;
 }
 
 #fetchBtn:hover {
   background-color: #1a8cff;
 }
 
-/* SOS Button */
-#sosBtn {
-  background-color: #d93025;
-  color: white;
-  border: none;
-  padding: 10px 18px;
-  font-size: 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(217, 48, 37, 0.3);
-  transition: background-color 0.3s ease;
-}
+@media screen and (max-width: 480px) {
+  .button-row {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-#sosBtn:hover {
-  background-color: #b9241b;
+  #sosBtn, #fetchBtn {
+    max-width: 100%;
+  }
 }
