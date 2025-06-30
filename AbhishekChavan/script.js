@@ -1,17 +1,17 @@
-const fetchBtn = document.getElementById("fetchBtn"); // changed from sosBtn
+// Only trigger on the Fetch Medical History button
+const fetchBtn = document.getElementById("fetchBtn");
 const otpSection = document.getElementById("otpSection");
 const otpInput = document.getElementById("otpInput");
 const verifyOtpBtn = document.getElementById("verifyOtpBtn");
 const medicalData = document.getElementById("medicalData");
 
-// Trigger OTP flow from Fetch button
+// ✅ OTP Flow for Fetch Button
 fetchBtn.addEventListener("click", () => {
-  // In production: Send OTP using API to emergency contact
   alert("OTP sent to registered emergency contact.");
   otpSection.style.display = "block";
 });
 
-// Simulated OTP verification
+// ✅ Verify OTP
 verifyOtpBtn.addEventListener("click", () => {
   if (otpInput.value === "123456") {
     alert("OTP verified!");
@@ -20,3 +20,4 @@ verifyOtpBtn.addEventListener("click", () => {
     alert("Invalid OTP. Please try again.");
   }
 });
+
