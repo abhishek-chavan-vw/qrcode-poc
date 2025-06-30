@@ -170,6 +170,7 @@ input {
   max-width: 500px;
 }
 
+
 .button-row button {
   flex: 1;
   padding: 12px;
@@ -202,13 +203,20 @@ input {
   background-color: #1a8cff;
 }
 
-/* Responsive: Stack on mobile */
 @media screen and (max-width: 480px) {
   .button-row {
-    flex-direction: column;
+    flex-direction: row;       /* force side-by-side layout even on phones */
+    justify-content: space-between;
+    gap: 8px;
   }
 
   .button-row button {
-    width: 100%;
+    flex: 1;
+    padding: 10px;
+    font-size: 0.85rem;
+    white-space: nowrap;       /* prevent text wrapping */
+  }
+}
+
   }
 }
