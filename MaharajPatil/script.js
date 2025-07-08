@@ -1,17 +1,17 @@
-const sosBtn = document.getElementById("sosBtn");
+// Only trigger on the Fetch Medical History button
+const fetchBtn = document.getElementById("fetchBtn");
 const otpSection = document.getElementById("otpSection");
 const otpInput = document.getElementById("otpInput");
 const verifyOtpBtn = document.getElementById("verifyOtpBtn");
 const medicalData = document.getElementById("medicalData");
 
-// Simulate sending OTP
-sosBtn.addEventListener("click", () => {
-  // In production: Send OTP using Twilio/API to family member
+// ✅ OTP Flow for Fetch Button
+fetchBtn.addEventListener("click", () => {
   alert("OTP sent to registered emergency contact.");
   otpSection.style.display = "block";
 });
 
-// Simulated OTP verification
+// ✅ Verify OTP
 verifyOtpBtn.addEventListener("click", () => {
   if (otpInput.value === "123456") {
     alert("OTP verified!");
