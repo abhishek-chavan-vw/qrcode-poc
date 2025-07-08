@@ -125,11 +125,6 @@ input {
   color: #003f7d;
 }
 
-#sosBtn {
-  background-color: #d93025; 
-  color: white;
-  border: none;
-}
 
 /* New top header bar */
 .top-header {
@@ -165,4 +160,61 @@ input {
   max-width: 90px; /* smaller than old logo */
   margin: 0 auto 20px;
   height: auto;
+}
+
+/* Button Container */
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+/*  Common Button Styles */
+.button-row button {
+  flex: 1;
+  padding: 12px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+/*  SOS Button Style */
+#sosBtn {
+  background-color: #d93025;
+  color: white;
+}
+
+#sosBtn:hover {
+  background-color: #b9241b;
+}
+
+/*  Fetch Button Style */
+#fetchBtn {
+  background-color: #79c2ff;
+  color: white;
+}
+
+#fetchBtn:hover {
+  background-color: #1a8cff;
+}
+
+
+@media screen and (max-width: 480px) {
+  .button-row {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .button-row button {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
 }
